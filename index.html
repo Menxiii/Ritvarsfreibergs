@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ritvars Freibergs - Latvijas džiu-džitsu sportists. Informācija par viņa sacensībām un sasniegumiem.">
+    <meta name="keywords" content="Ritvars Freibergs, džiu-džitsu, Latvijas sportisti, sacensības, cīņas sports, Combat Jiu-Jitsu, Brazilian Jiu-Jitsu">
+    <meta name="author" content="Jūsu Vārds">
+    <title>Ritvars Freibergs - Latvijas džiu-džitsu sportists</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            line-height: 1.6;
+            background: linear-gradient(45deg, #333333, #000000);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #f4a261;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #e76f51;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 100px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: #f4a261;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            color: #ffffff;
+            margin-top: 40px;
+        }
+
+        .scroll-wheel {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #f4a261;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: 0.3s;
+        }
+
+        .scroll-wheel:hover {
+            background-color: #e76f51;
+        }
+
+        .side-menu {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            width: 200px;
+            z-index: 10;
+        }
+
+        .side-menu a {
+            color: #fff;
+            display: block;
+            margin: 15px 0;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .side-menu a:hover {
+            color: #f4a261;
+        }
+
+        .advertisement {
+            text-align: center;
+            background-color: #e76f51;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .advertisement a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .dream {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #f4a261;
+        }
+
+        .bjj-info, .cjj-info {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .bjj-info h2, .cjj-info h2 {
+            color: #f4a261;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .bjj-info p, .cjj-info p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #fff;
+        }
+
+        .endless-scroll {
+            height: 200vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero">
+        <div>
+            <h1>Ritvars Freibergs</h1>
+            <p>Latvijas džiu-džitsu sportists</p>
+            <a href="#about" class="btn">Uzzināt vairāk</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="about" class="about">
+            <h2 class="section-title">Par mani</h2>
+            <p>Ritvars Freibergs ir viens no Latvijas vadošajiem džiu-džitsu sportistiem. Viņš ir piedalījies dažādās starptautiskās sacensībās un ieguvis daudzas medaļas.</p>
+        </section>
+
+        <section id="cjj" class="cjj-info">
+            <h2>Kas ir Combat Jiu-Jitsu (CJJ)?</h2>
+            <p>Combat Jiu-Jitsu (CJJ) ir mūsdienīgs cīņas sports, kas apvieno tradicionālā Brazilian Jiu-Jitsu tehnikas ar sitieniem. CJJ uzsvars ir uz efektīvu cīņu gan uz zemes, gan stāvošās pozīcijās. Tā tika izstrādāta, lai sagatavotu sportistus cīņām, kur sitieni un uzbrukumi uz zemes ir atļauti, tādējādi radot reālistiskāku cīņas vidi.</p>
+
+            <p>CJJ ir lielisks veids, kā apgūt džiu-džitsu, jo tas uzlabo spēju pielietot BJJ tehnikas cīņā, kurā cīnītājs var izmantot sitienus, lai iegūtu pārsvaru vai aizsargātos. CJJ sportistiem ir jāmāk pielietot dažādas tehnikas, piemēram, apspiešanu, pārejas un kontroli uz zemes, vienlaikus atceroties par sitieniem no jebkuras pozīcijas.</p>
+
+            <p>Combat Jiu-Jitsu ir izstrādāts, lai imitētu reālās cīņas situācijas, tāpēc tas ir populārs starp MMA sportistiem un tiem, kas vēlas pilnveidot savas cīņas spējas dažādās situācijās. Tas ir arī lielisks veids, kā pilnveidot stratēģiskās un taktiskās prasmes, kas noderēs gan cīņas sportā, gan ikdienas dzīvē.</p>
+        </section>
+
+        <section id="bjj" class="bjj-info">
+            <h2>Kas ir Brazilian Jiu-Jitsu?</h2>
+            <p>Brazilian Jiu-Jitsu (BJJ) ir cīņas māksla, kas koncentrējas uz cīņām uz zemes. Tā ietver tehnikas, kas balstās uz uzbrukumiem, aizsardzību, kontroli un pāreju uz citām pozīcijām. BJJ ir ļoti efektīva, jo ļauj mazākiem un vājākiem cilvēkiem uzvarēt lielākus pretiniekus, izmantojot paņēmienus, kas balstās uz ķermeņa svara un tehnikas izmantošanu.</p>
+
+            <p>BJJ ir bijusi ļoti ietekmīga MMA sportā, jo tās tehnikas ir ļoti efektīvas zemes cīņās. Sportisti apgūst BJJ tehnikas, lai uzlabotu savas spējas gan aizsardzībā, gan uzbrukumā.</p>
+        </section>
+
+        <section id="achievements" class="achievements">
+            <h2 class="section-title">Sasniegumi</h2>
+            <ul>
+                <li>BJJ - Igaunijā zelta medaļa, Latvijā sudraba, Lietuvā sudraba.</li>
+                <li>CJJ - Pasaules čempionāta bronza, Eiropas bronza, Latvijas zelta (2023 un 2024).</li>
+                <li>Full Contact cīņas - divas Pirmās vietas (2023, 2024).</li>
+                <li>Ziemas starptautiskais Latvijas čempionāts (2025) - divas pirmās vietas.</li>
+            </ul>
+        </section>
+
+        <div class="advertisement">
+            <p>Jelgava Samurai - Cīņas mākslas skola. <a href="https://www.localgymsandfitness.com/LV/Jelgava/100343686128428/Jelgavas-Samuraji?utm_source=chatgpt.com" target="_blank">Apmeklējiet mūsu mājaslapu!</a></p>
+        </div>
+
+        <div class="dream">
+            <p><em>Ritvara sapnis ir tikti profesionala MMA</em></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Ritvars Freibergs. Visas tiesības aizsargātas.</p>
+    </footer>
+
+    <div class="scroll-wheel" onclick="scrollToTop()">
+        ↑
+    </div>
+
+    <div class="side-menu">
+        <a href="#about">Par mani</a>
+        <a href="#cjj">Kas ir Combat Jiu-Jitsu?</a>
+        <a href="#achievements">Sasniegumi</a>
+        <a href="https://cjjif.org/" target="_blank">Combat Jiu-Jitsu mājas lapa</a>
+        <a href="#bjj">Kas ir Brazilian Jiu-Jitsu?</a>
+    </div>
+
+    <div class="endless-scroll"></div>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</body>
+
+</html>
